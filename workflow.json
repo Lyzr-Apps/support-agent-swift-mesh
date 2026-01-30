@@ -1,0 +1,49 @@
+{
+  "workflow_name": "Customer Support Workflow",
+  "workflow_type": "single_agent",
+  "agents": [
+    {
+      "agent_id": "697d38dcd36f070193f5c9d6",
+      "agent_name": "Customer Support Agent",
+      "agent_type": "single",
+      "description": "Answers customer queries by searching website knowledge base and generating accurate, helpful responses in a conversational tone. Maintains context across the conversation for follow-up questions.",
+      "trigger": "Send button in Chat Interface",
+      "knowledge_base": {
+        "rag_id": "697d38d347177de38546da30",
+        "rag_name": "websitecontentkb8tr1",
+        "collection_name": "websitecontentkb8tr1"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Customer Question",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "support_agent",
+      "type": "Agent",
+      "label": "Customer Support Agent",
+      "nodeCategory": "agent",
+      "agent_id": "697d38dcd36f070193f5c9d6"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Support Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "support_agent"
+    },
+    {
+      "source": "support_agent",
+      "target": "output_node"
+    }
+  ]
+}

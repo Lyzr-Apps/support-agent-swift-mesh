@@ -1,0 +1,12 @@
+{
+  "agent_name": "Customer Support Agent",
+  "agent_id": "697d38dcd36f070193f5c9d6",
+  "test_message": "How do I reset my password?",
+  "timestamp": "2026-01-30T23:04:24.773200",
+  "response_structure": {
+    "raw_text": "string"
+  },
+  "sample_response": {
+    "raw_text": "I'll help you reset your password. While I don't see specific password reset instructions in the current knowledge base, I can provide some general guidance:\n\nTypically, to reset your password, you can follow these steps:\n\n1. Go to the login page\n2. Look for a \"Forgot Password\" or \"Reset Password\" link\n3. Click on that link\n4. Enter the email address associated with your account\n5. You should receive a password reset link in your email\n6. Follow the link and create a new password\n\nIf you're having trouble with these steps or can't find the password reset option, I recommend:\n- Checking the website's help or support section\n- Contacting customer support directly for specific assistance\n\nWould you like me to help you find the specific password reset process for this platform?"
+  }
+}

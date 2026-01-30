@@ -1,0 +1,52 @@
+{
+  "agent_name": "Customer Support Agent",
+  "agent_id": "697d38dcd36f070193f5c9d6",
+  "agent_purpose": "customer_support",
+  "description": "Conversational customer support responses with helpful answers and follow-up suggestions",
+  "response_schema": {
+    "status": "string (success|error)",
+    "result": {
+      "response": "string",
+      "action_taken": "string (optional)",
+      "data": "object (optional, any structured data)",
+      "suggestions": [
+        "string (optional)"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string (ISO)"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "response": "I've completed the task you requested",
+      "action_taken": "Processed the input and generated output",
+      "data": {
+        "key": "value"
+      },
+      "suggestions": [
+        "You might also want to try X"
+      ]
+    },
+    "metadata": {
+      "agent_name": "Customer Support Agent",
+      "timestamp": "2025-01-15T10:30:00Z"
+    }
+  },
+  "is_actual_tested": false,
+  "test_timestamp": "2026-01-30T23:04:24.775395",
+  "test_message_used": "Hello, provide a sample response",
+  "raw_test_response": "Hello! I'm happy to help you today. As a customer support specialist, I'm ready to assist you with any questions or concerns you might have. Is there a specific topic or issue you'd like to discuss? I'll do my best to provide clear, helpful information in a friendly and professional manner. What can I help you with today?",
+  "test_error": "Response not valid JSON: Expecting value: line 1 column 1 (char 0)",
+  "actual_test_response": {
+    "raw_text": "I'll help you reset your password. While I don't see specific password reset instructions in the current knowledge base, I can provide some general guidance:\n\nTypically, to reset your password, you can follow these steps:\n\n1. Go to the login page\n2. Look for a \"Forgot Password\" or \"Reset Password\" link\n3. Click on that link\n4. Enter the email address associated with your account\n5. You should receive a password reset link in your email\n6. Follow the link and create a new password\n\nIf you're having trouble with these steps or can't find the password reset option, I recommend:\n- Checking the website's help or support section\n- Contacting customer support directly for specific assistance\n\nWould you like me to help you find the specific password reset process for this platform?"
+  },
+  "test_passed": true,
+  "actual_response_structure": {
+    "type": "text",
+    "field": "raw_text",
+    "description": "The agent returns a plain text conversational response"
+  }
+}

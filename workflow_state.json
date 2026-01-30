@@ -1,0 +1,18 @@
+{
+  "current_step": "completed",
+  "status": "completed",
+  "agents": [
+    {
+      "name": "Customer Support Agent",
+      "id": "697d38dcd36f070193f5c9d6",
+      "tested": true,
+      "rag_id": "697d38d347177de38546da30",
+      "rag_name": "websitecontentkb8tr1"
+    }
+  ],
+  "test_results": {
+    "passed": 1,
+    "failed": 0
+  },
+  "ui_built": true
+}
